@@ -12,8 +12,6 @@ public class TidesBlocks {
     public static final Block LIMESTONE = registerBlock("limestone",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
-    public static final Block BARNACLE_LIMESTONE = registerBlock("barnacle_limestone",
-            new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
     public static final Block URCHIN = registerBlock("urchin",
             new Block(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));

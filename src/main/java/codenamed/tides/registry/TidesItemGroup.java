@@ -18,7 +18,6 @@ public class TidesItemGroup {
                     .icon(() -> new ItemStack(TidesBlocks.LIMESTONE)).entries((displayContext, entries) -> {
 
                         entries.add(TidesBlocks.LIMESTONE);
-                        entries.add(TidesBlocks.BARNACLE_LIMESTONE);
                         entries.add(Blocks.SPONGE);
                         entries.add(TidesBlocks.SPONGE_TUBES);
                         entries.add(TidesBlocks.URCHIN);
