@@ -1,5 +1,7 @@
 package codenamed.tides;
 
+import codenamed.tides.registry.TidesBlocks;
+import codenamed.tides.registry.TidesItemGroup;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,5 +15,9 @@ public class Tides implements ModInitializer {
 	public void onInitialize() {
 
 		LOGGER.info(MOD_ID);
+
+
+		TidesBlocks.registerModBlocks();
+		TidesItemGroup.registerItemGroups();
 	}
 }
