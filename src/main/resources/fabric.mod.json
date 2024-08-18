@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tides",
+	"version": "${version}",
+	"name": "Tides",
+	"description": "Adds simple tide pools to Minecraft",
+	"authors": [
+		"CodenamedSuper and FishyGoose"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tides/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"codenamed.tides.Tides"
+		],
+		"fabric-datagen": [
+			"codenamed.tides.TidesDataGenerator"
+		],
+		"client": [
+			"codenamed.tides.TidesClient"
+		]
+	},
+	"mixins": [
+		"tides.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
