@@ -1,5 +1,11 @@
 {
   "block.tides.limestone": "Limestone",
   "block.tides.barnacle_limestone": "Barnacle Limestone",
+  "block.tides.urchin": "Urchin",
+  "block.tides.urchin_spines": "Urchin Spines",
+  "block.tides.anemone": "Anemone",
+  "block.tides.anemone_tentacles": "Anemone Tentacles",
+  "block.tides.sponge_tubes": "Sponge Tubes",
+
   "item.cavens.amber": "Amber"
 }

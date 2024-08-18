@@ -2,6 +2,7 @@ package codenamed.tides.registry;
 import codenamed.tides.Tides;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
@@ -18,7 +19,12 @@ public class TidesItemGroup {
 
                         entries.add(TidesBlocks.LIMESTONE);
                         entries.add(TidesBlocks.BARNACLE_LIMESTONE);
-
+                        entries.add(Blocks.SPONGE);
+                        entries.add(TidesBlocks.SPONGE_TUBES);
+                        entries.add(TidesBlocks.URCHIN);
+                        entries.add(TidesBlocks.URCHIN_SPINES);
+                        entries.add(TidesBlocks.ANEMONE);
+                        entries.add(TidesBlocks.ANEMONE_TENTACLES);
 
                     }).build());
 
