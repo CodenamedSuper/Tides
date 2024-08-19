@@ -1,9 +1,6 @@
 package codenamed.tides;
 
-import codenamed.tides.registry.TidesBlocks;
-import codenamed.tides.registry.TidesFeature;
-import codenamed.tides.registry.TidesItemGroup;
-import codenamed.tides.registry.TidesPlacedFeatures;
+import codenamed.tides.registry.*;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -36,6 +33,7 @@ public class Tides implements ModInitializer {
 
 
 		TidesBlocks.registerModBlocks();
+		TidesItems.registerModItems();
 		TidesItemGroup.registerItemGroups();
 		TidesFeature.registerFeatures();
 		TidesPlacedFeatures.registerPlacedFeatured();
