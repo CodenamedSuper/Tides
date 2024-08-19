@@ -8,7 +8,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class UrchinSpinesBlock extends MarinaOrganBlock{
+public class UrchinSpinesBlock extends MarinalOrganBlock {
     public UrchinSpinesBlock(float height, float xzOffset, Settings settings) {
         super(height, xzOffset, settings);
 
@@ -18,6 +18,7 @@ public class UrchinSpinesBlock extends MarinaOrganBlock{
     protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (entity instanceof LivingEntity livingEntity) {
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 120, 0));
+            livingEntity.damage(world.getDamageSources().sweetBerryBush(), 1.0f);
         }
         super.onEntityCollision(state, world, pos, entity);
     }

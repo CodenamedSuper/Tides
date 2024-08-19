@@ -22,13 +22,13 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
-public class MarinaOrganBlock extends Block implements Waterloggable {
-    public static final MapCodec<MarinaOrganBlock> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
+public class MarinalOrganBlock extends Block implements Waterloggable {
+    public static final MapCodec<MarinalOrganBlock> CODEC = RecordCodecBuilder.mapCodec((instance) -> {
         return instance.group(Codec.FLOAT.fieldOf("height").forGetter((block) -> {
             return block.height;
         }), Codec.FLOAT.fieldOf("aabb_offset").forGetter((block) -> {
             return block.xzOffset;
-        }), createSettingsCodec()).apply(instance, MarinaOrganBlock::new);
+        }), createSettingsCodec()).apply(instance, MarinalOrganBlock::new);
     });
     public static final BooleanProperty WATERLOGGED;
     public static final DirectionProperty FACING;
@@ -41,11 +41,11 @@ public class MarinaOrganBlock extends Block implements Waterloggable {
     protected final VoxelShape upShape;
     protected final VoxelShape downShape;
 
-    public MapCodec<MarinaOrganBlock> getCodec() {
+    public MapCodec<MarinalOrganBlock> getCodec() {
         return CODEC;
     }
 
-    public MarinaOrganBlock(float height, float xzOffset, AbstractBlock.Settings settings) {
+    public MarinalOrganBlock(float height, float xzOffset, AbstractBlock.Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.getDefaultState().with(WATERLOGGED, false)).with(FACING, Direction.UP));
         this.upShape = Block.createCuboidShape((double)xzOffset, 0.0, (double)xzOffset, (double)(16.0F - xzOffset), (double)height, (double)(16.0F - xzOffset));

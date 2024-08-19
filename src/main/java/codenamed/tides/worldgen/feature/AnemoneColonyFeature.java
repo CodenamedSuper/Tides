@@ -1,6 +1,6 @@
 package codenamed.tides.worldgen.feature;
 
-import codenamed.tides.block.MarinaOrganBlock;
+import codenamed.tides.block.MarinalOrganBlock;
 import codenamed.tides.registry.TidesBlocks;
 import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;
@@ -29,22 +29,22 @@ public class AnemoneColonyFeature extends Feature<SimpleBlockFeatureConfig> {
         if (blockState.canPlaceAt(world, blockPos)) {
 
             if (world.getBlockState(testPos).isOf(Blocks.WATER)) {
-                world.setBlockState(testPos, TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinaOrganBlock.WATERLOGGED, true),1);
+                world.setBlockState(testPos, TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true),1);
             }
             for (int i = 0; i < 5; i++) {
                 if (random.nextInt(2) == 0) {
                     if (i == 0) {
-                        world.setBlockState(blockPos.north(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinaOrganBlock.WATERLOGGED, true)
-                                .with(MarinaOrganBlock.FACING, Direction.NORTH), 1);
+                        world.setBlockState(blockPos.north(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true)
+                                .with(MarinalOrganBlock.FACING, Direction.NORTH), 1);
                     } else if (i == 1) {
-                        world.setBlockState(blockPos.east(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinaOrganBlock.WATERLOGGED, true)
-                                .with(MarinaOrganBlock.FACING, Direction.EAST), 1);
+                        world.setBlockState(blockPos.east(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true)
+                                .with(MarinalOrganBlock.FACING, Direction.EAST), 1);
                     } else if (i == 2) {
-                        world.setBlockState(blockPos.south(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinaOrganBlock.WATERLOGGED, true)
-                                .with(MarinaOrganBlock.FACING, Direction.SOUTH), 1);
+                        world.setBlockState(blockPos.south(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true)
+                                .with(MarinalOrganBlock.FACING, Direction.SOUTH), 1);
                     } else if (i == 3) {
-                        world.setBlockState(blockPos.west(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinaOrganBlock.WATERLOGGED, true)
-                                .with(MarinaOrganBlock.FACING, Direction.WEST), 1);
+                        world.setBlockState(blockPos.west(), TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true)
+                                .with(MarinalOrganBlock.FACING, Direction.WEST), 1);
                     }
                 }
             }

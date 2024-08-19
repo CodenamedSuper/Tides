@@ -5,6 +5,9 @@
   "block.tides.anemone": "Anemone",
   "block.tides.anemone_tentacles": "Anemone Tentacles",
   "block.tides.sponge_tubes": "Sponge Tubes",
+  "block.tides.clam": "Clam",
+  "block.tides.sargassum": "Sargassum",
+
 
   "item.tides.ocean_stew": "Ocean Stew"
 }

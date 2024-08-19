@@ -1,6 +1,7 @@
 package codenamed.tides.registry;
 import codenamed.tides.Tides;
-import codenamed.tides.block.MarinaOrganBlock;
+import codenamed.tides.block.ClamBlock;
+import codenamed.tides.block.MarinalOrganBlock;
 import codenamed.tides.block.MarinalBlock;
 import codenamed.tides.block.UrchinSpinesBlock;
 import net.minecraft.block.*;
@@ -14,6 +15,8 @@ public class TidesBlocks {
     public static final Block LIMESTONE = registerBlock("limestone",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
+    public static final Block CLAM = registerBlock("clam",
+            new ClamBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
     public static final Block URCHIN = registerBlock("urchin",
             new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
@@ -25,10 +28,13 @@ public class TidesBlocks {
             new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
 
     public static final Block ANEMONE_TENTACLES = registerBlock("anemone_tentacles",
-            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
     public static final Block SPONGE_TUBES = registerBlock("sponge_tubes",
-            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+
+    public static final Block SARGASSUM = registerBlock("sargassum",
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.AZALEA_LEAVES).requiresTool()));
 
     private static Item registerBlockItem(String name, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(Tides.MOD_ID, name),
