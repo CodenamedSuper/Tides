@@ -2,6 +2,7 @@ package codenamed.tides.registry;
 import codenamed.tides.Tides;
 import codenamed.tides.block.MarinaOrganBlock;
 import codenamed.tides.block.MarinalBlock;
+import codenamed.tides.block.UrchinSpinesBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,7 +19,7 @@ public class TidesBlocks {
             new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
 
     public static final Block URCHIN_SPINES = registerBlock("urchin_spines",
-            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new UrchinSpinesBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
     public static final Block ANEMONE = registerBlock("anemone",
             new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
