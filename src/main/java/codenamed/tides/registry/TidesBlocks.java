@@ -1,5 +1,6 @@
 package codenamed.tides.registry;
 import codenamed.tides.Tides;
+import codenamed.tides.block.MarinaOrganBlock;
 import codenamed.tides.block.MarinalBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -14,19 +15,19 @@ public class TidesBlocks {
 
 
     public static final Block URCHIN = registerBlock("urchin",
-            new Block(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
 
     public static final Block URCHIN_SPINES = registerBlock("urchin_spines",
-            new MarinalBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
     public static final Block ANEMONE = registerBlock("anemone",
-            new Block(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
 
     public static final Block ANEMONE_TENTACLES = registerBlock("anemone_tentacles",
-            new MarinalBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
     public static final Block SPONGE_TUBES = registerBlock("sponge_tubes",
-            new MarinalBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinaOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
     private static Item registerBlockItem(String name, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(Tides.MOD_ID, name),
