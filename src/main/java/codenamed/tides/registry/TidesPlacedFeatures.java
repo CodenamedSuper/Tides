@@ -17,7 +17,7 @@ public class TidesPlacedFeatures {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(Tides.MOD_ID, name));
     }
 
-    public  static  void  registerPlacedFeatured() {
+    public  static  void  registerPlacedFeatures() {
 
     }
 }

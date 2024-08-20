@@ -1,6 +1,7 @@
 package codenamed.tides;
 
 import codenamed.tides.registry.*;
+import com.terraformersmc.biolith.api.biome.BiomePlacement;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -36,28 +37,12 @@ public class Tides implements ModInitializer {
 		TidesItems.registerModItems();
 		TidesItemGroup.registerItemGroups();
 		TidesFeature.registerFeatures();
-		TidesPlacedFeatures.registerPlacedFeatured();
+		TidesPlacedFeatures.registerPlacedFeatures();
+		TidesBiomeKeys.registerBiomeKeys();
 
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.COLONY_URCHIN);
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.COLONY_URCHIN);
 
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.COLONY_ANEMONE);
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.COLONY_ANEMONE);
 
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.ANEMONE);
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.ANEMONE);
-
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.URCHIN);
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
-				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.URCHIN);
-
+		BiomePlacement.replaceOverworld(BiomeKeys.BEACH, TidesBiomeKeys.TIDE_POOLS, 1d);
 
 
 	}

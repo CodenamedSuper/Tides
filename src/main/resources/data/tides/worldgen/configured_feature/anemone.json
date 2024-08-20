@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:simple_block",
+  "type": "tides:anemone",
   "config": {
     "to_place": {
       "type": "minecraft:simple_state_provider",

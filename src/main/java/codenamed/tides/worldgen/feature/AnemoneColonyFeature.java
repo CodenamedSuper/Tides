@@ -26,7 +26,7 @@ public class AnemoneColonyFeature extends Feature<SimpleBlockFeatureConfig> {
         BlockState blockState = simpleBlockFeatureConfig.toPlace().get(context.getRandom(), blockPos);
         BlockPos testPos = blockPos.up();
         Random random = context.getRandom();
-        if (blockState.canPlaceAt(world, blockPos)) {
+        if (blockState.canPlaceAt(world, blockPos) && world.getBlockState(blockPos) == Blocks.WATER.getDefaultState()) {
 
             if (world.getBlockState(testPos).isOf(Blocks.WATER)) {
                 world.setBlockState(testPos, TidesBlocks.ANEMONE_TENTACLES.getDefaultState().with(MarinalOrganBlock.WATERLOGGED, true),1);

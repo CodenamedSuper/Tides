@@ -2,6 +2,7 @@ package codenamed.tides.registry;
 
 import codenamed.tides.Tides;
 import codenamed.tides.worldgen.feature.AnemoneColonyFeature;
+import codenamed.tides.worldgen.feature.MarinalOrganFeature;
 import codenamed.tides.worldgen.feature.UrchinColonyFeature;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,6 +17,10 @@ public abstract class TidesFeature<FC extends FeatureConfig> {
             new UrchinColonyFeature(SimpleBlockFeatureConfig.CODEC));
     public static final Feature<SimpleBlockFeatureConfig> COLONY_ANEMONE = registerFeature("colony_anemone",
             new AnemoneColonyFeature(SimpleBlockFeatureConfig.CODEC));
+    public static final Feature<SimpleBlockFeatureConfig> ANEMONE = registerFeature("anemone",
+            new MarinalOrganFeature(SimpleBlockFeatureConfig.CODEC));
+    public static final Feature<SimpleBlockFeatureConfig> URCHIN = registerFeature("urchin",
+            new MarinalOrganFeature(SimpleBlockFeatureConfig.CODEC));
 
 
     private static <C extends FeatureConfig, F extends Feature<C>> F registerFeature(String name, F feature) {
