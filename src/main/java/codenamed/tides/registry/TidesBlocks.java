@@ -16,7 +16,7 @@ public class TidesBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
     public static final Block CLAM = registerBlock("clam",
-            new ClamBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+            new ClamBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().ticksRandomly()));
 
     public static final Block URCHIN = registerBlock("urchin",
             new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
