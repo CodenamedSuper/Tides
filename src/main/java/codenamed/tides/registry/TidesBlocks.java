@@ -33,9 +33,6 @@ public class TidesBlocks {
     public static final Block SPONGE_TUBES = registerBlock("sponge_tubes",
             new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
 
-    public static final Block SARGASSUM = registerBlock("sargassum",
-            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.AZALEA_LEAVES).requiresTool()));
-
     private static Item registerBlockItem(String name, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(Tides.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));

@@ -144,9 +144,7 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:disk_sand",
-      "minecraft:disk_clay",
-      "minecraft:disk_gravel"
+      "minecraft:disk_sand"
     ],
     [],
     [
@@ -161,10 +159,14 @@
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
+      "minecraft:seagrass_warm",
+      "minecraft:kelp_warm",
       "tides:colony_urchin",
       "tides:colony_anemone",
       "tides:urchin",
-      "tides:anemone"
+      "tides:anemone",
+      "tides:sponge",
+      "tides:clam"
     ],
     [
       "minecraft:freeze_top_layer"

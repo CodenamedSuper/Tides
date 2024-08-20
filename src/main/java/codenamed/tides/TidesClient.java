@@ -11,7 +11,6 @@ public class TidesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.URCHIN_SPINES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.ANEMONE_TENTACLES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.SPONGE_TUBES, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.SARGASSUM, RenderLayer.getCutout());
 
     }
 }

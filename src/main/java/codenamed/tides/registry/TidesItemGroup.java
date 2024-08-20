@@ -26,7 +26,6 @@ public class TidesItemGroup {
                         entries.add(TidesBlocks.ANEMONE_TENTACLES);
                         entries.add(TidesItems.OCEAN_STEW);
                         entries.add(TidesBlocks.CLAM);
-                        entries.add(TidesBlocks.SARGASSUM);
 
 
                     }).build());

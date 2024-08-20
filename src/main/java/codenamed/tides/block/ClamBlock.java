@@ -79,6 +79,7 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
         return (Boolean)state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
+
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         if ((Boolean)state.get(WATERLOGGED)) {
             double d = (double)pos.getX() + 0.5;
@@ -98,24 +99,32 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
         }
     }
 
+
+
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
-        if (!state.get(OPEN)) {
-            world.setBlockState(pos, state.with(OPEN, true));
-            if (player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
-                launchEntity(player, pos, world, state);
+        cycleOpenedState(state, world, pos);
+        if (state.get(OPEN) && player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
+            launchEntity(player, pos, world, state);
 
-            }
-
-        }
-        else {
-            world.setBlockState(pos, state.with(OPEN, false));
         }
         return ActionResult.SUCCESS;
     }
 
+    public  void  cycleOpenedState(BlockState state, World world, BlockPos pos) {
+        if (!state.get(OPEN)) {
+            world.setBlockState(pos, state.with(OPEN, true));
+        }
+        else {
+            world.setBlockState(pos, state.with(OPEN, false));
+        }
+    }
 
+    protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if (!world.isClient) {
+        }
+    }
 
 
     @Override

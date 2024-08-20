@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
+import net.minecraft.world.gen.feature.PlacedFeatures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,7 +43,12 @@ public class Tides implements ModInitializer {
 
 
 
-		BiomePlacement.replaceOverworld(BiomeKeys.BEACH, TidesBiomeKeys.TIDE_POOLS, 1d);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
+				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
+
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
+				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
+
 
 
 	}

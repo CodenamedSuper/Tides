@@ -21,6 +21,8 @@ public abstract class TidesFeature<FC extends FeatureConfig> {
             new MarinalOrganFeature(SimpleBlockFeatureConfig.CODEC));
     public static final Feature<SimpleBlockFeatureConfig> URCHIN = registerFeature("urchin",
             new MarinalOrganFeature(SimpleBlockFeatureConfig.CODEC));
+    public static final Feature<SimpleBlockFeatureConfig> SPONGE = registerFeature("sponge",
+            new MarinalOrganFeature(SimpleBlockFeatureConfig.CODEC));
 
 
     private static <C extends FeatureConfig, F extends Feature<C>> F registerFeature(String name, F feature) {
