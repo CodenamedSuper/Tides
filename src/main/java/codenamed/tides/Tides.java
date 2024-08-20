@@ -43,13 +43,18 @@ public class Tides implements ModInitializer {
 
 
 
+		BiomePlacement.replaceOverworld(BiomeKeys.BEACH, TidesBiomeKeys.TIDE_POOLS, 0.2d);
+
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
 				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
-
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),
 				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
-
-
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OCEAN),
+				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_COLD_OCEAN),
+				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.COLD_OCEAN),
+				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
 
 	}
 }
