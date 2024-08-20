@@ -5,8 +5,8 @@
   "effects": {
     "sky_color": 7907327,
     "fog_color": 12638463,
-    "water_color": 3124375,
-    "water_fog_color": 340778,
+    "water_color": 3124394,
+    "water_fog_color": 340531,
     "mood_sound": {
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000,
@@ -144,7 +144,8 @@
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
       "minecraft:underwater_magma",
-      "minecraft:disk_sand"
+      "tides:disk_limestone"
+
     ],
     [],
     [

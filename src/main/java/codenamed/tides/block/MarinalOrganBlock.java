@@ -47,7 +47,7 @@ public class MarinalOrganBlock extends Block implements Waterloggable {
 
     public MarinalOrganBlock(float height, float xzOffset, AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.getDefaultState().with(WATERLOGGED, false)).with(FACING, Direction.UP));
+        this.setDefaultState((BlockState)((BlockState)this.getDefaultState().with(WATERLOGGED, true)).with(FACING, Direction.UP));
         this.upShape = Block.createCuboidShape((double)xzOffset, 0.0, (double)xzOffset, (double)(16.0F - xzOffset), (double)height, (double)(16.0F - xzOffset));
         this.downShape = Block.createCuboidShape((double)xzOffset, (double)(16.0F - height), (double)xzOffset, (double)(16.0F - xzOffset), 16.0, (double)(16.0F - xzOffset));
         this.northShape = Block.createCuboidShape((double)xzOffset, (double)xzOffset, (double)(16.0F - height), (double)(16.0F - xzOffset), (double)(16.0F - xzOffset), 16.0);

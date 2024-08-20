@@ -104,27 +104,25 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
-        cycleOpenedState(state, world, pos);
-        if (state.get(OPEN) && player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
-            launchEntity(player, pos, world, state);
-
-        }
+        cycleOpenedState(state, world, pos, player);
         return ActionResult.SUCCESS;
     }
 
-    public  void  cycleOpenedState(BlockState state, World world, BlockPos pos) {
+    public  void  cycleOpenedState(BlockState state, World world, BlockPos pos, PlayerEntity player) {
         if (!state.get(OPEN)) {
             world.setBlockState(pos, state.with(OPEN, true));
+            if (player.getBlockPos().getX() == pos.getX() && player.getBlockPos().getZ() == pos.getZ() && player.getBlockPos().getY() == pos.getY() && !state.get(WATERLOGGED)) {
+                launchEntity(player, pos, world, state);
+
+            }
+
         }
         else {
             world.setBlockState(pos, state.with(OPEN, false));
         }
     }
 
-    protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        if (!world.isClient) {
-        }
-    }
+
 
 
     @Override

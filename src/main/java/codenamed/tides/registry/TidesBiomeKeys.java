@@ -9,7 +9,7 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 
 public class TidesBiomeKeys {
 
-    public static final RegistryKey<Biome> TIDE_POOLS = registerKey("tide_pools");
+    public static final RegistryKey<Biome> LIMESTONE_SHORE = registerKey("limestone_shore");
 
 
     public static RegistryKey<Biome> registerKey(String name) {
