@@ -13,9 +13,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class TidesItemGroup {
-    public static ItemGroup CAVENS_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(Tides.MOD_ID, "tides"),
-            FabricItemGroup.builder().displayName(Text.translatable("Cavens"))
-                    .icon(() -> new ItemStack(TidesBlocks.LIMESTONE)).entries((displayContext, entries) -> {
+    public static ItemGroup TIDES_GROUP = Registry.register(Registries.ITEM_GROUP, Identifier.of(Tides.MOD_ID, "tides"),
+            FabricItemGroup.builder().displayName(Text.translatable("Tides"))
+                    .icon(() -> new ItemStack(TidesBlocks.CLAM)).entries((displayContext, entries) -> {
 
                         entries.add(TidesBlocks.LIMESTONE);
                         entries.add(Blocks.SPONGE);

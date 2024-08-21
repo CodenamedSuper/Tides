@@ -19,19 +19,19 @@ public class TidesBlocks {
             new ClamBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().ticksRandomly()));
 
     public static final Block URCHIN = registerBlock("urchin",
-            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     public static final Block URCHIN_SPINES = registerBlock("urchin_spines",
-            new UrchinSpinesBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new UrchinSpinesBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     public static final Block ANEMONE = registerBlock("anemone",
-            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL_BLOCK).requiresTool()));
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.SPONGE).requiresTool()));
 
     public static final Block ANEMONE_TENTACLES = registerBlock("anemone_tentacles",
-            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     public static final Block SPONGE_TUBES = registerBlock("sponge_tubes",
-            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.BUBBLE_CORAL).requiresTool()));
+            new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     private static Item registerBlockItem(String name, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(Tides.MOD_ID, name),
