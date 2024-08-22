@@ -3,13 +3,13 @@
 	"id": "tides",
 	"version": "${version}",
 	"name": "Tides",
-	"description": "Adds simple tide pools to Minecraft",
+	"description": "Simple aquatic additions to Minecraft!",
 	"authors": [
 		"CodenamedSuper and FishyGoose"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/tides",
+		"sources": "https://github.com/CodenamedSuper/Tides"
 	},
 	"license": "MIT",
 	"icon": "assets/tides/icon.png",

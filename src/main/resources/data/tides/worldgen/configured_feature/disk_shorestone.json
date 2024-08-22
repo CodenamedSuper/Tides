@@ -11,7 +11,7 @@
       "fallback": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "tides:limestone"
+          "Name": "tides:shorestone"
         }
       },
       "rules": [
@@ -28,7 +28,7 @@
           "then": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "tides:limestone"
+              "Name": "tides:shorestone"
             }
           }
         }

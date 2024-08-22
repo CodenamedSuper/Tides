@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tides:limestone"
+          "name": "tides:shorestone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tides:blocks/limestone"
+  "random_sequence": "tides:blocks/shorestone"
 }

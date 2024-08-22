@@ -17,15 +17,15 @@ public class TidesItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("Tides"))
                     .icon(() -> new ItemStack(TidesBlocks.CLAM)).entries((displayContext, entries) -> {
 
-                        entries.add(TidesBlocks.LIMESTONE);
+                        entries.add(TidesBlocks.SHORESTONE);
                         entries.add(Blocks.SPONGE);
                         entries.add(TidesBlocks.SPONGE_TUBES);
                         entries.add(TidesBlocks.URCHIN);
                         entries.add(TidesBlocks.URCHIN_SPINES);
                         entries.add(TidesBlocks.ANEMONE);
                         entries.add(TidesBlocks.ANEMONE_TENTACLES);
-                        entries.add(TidesItems.OCEAN_STEW);
                         entries.add(TidesBlocks.CLAM);
+                        entries.add(TidesItems.OCEAN_STEW);
 
 
                     }).build());

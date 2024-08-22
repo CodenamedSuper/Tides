@@ -12,7 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 public class TidesBlocks {
 
-    public static final Block LIMESTONE = registerBlock("limestone",
+    public static final Block SHORESTONE = registerBlock("shorestone",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
     public static final Block CLAM = registerBlock("clam",
@@ -25,7 +25,7 @@ public class TidesBlocks {
             new UrchinSpinesBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     public static final Block ANEMONE = registerBlock("anemone",
-            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.SPONGE).requiresTool()));
+            new MarinalBlock(AbstractBlock.Settings.copy(Blocks.SPONGE)));
 
     public static final Block ANEMONE_TENTACLES = registerBlock("anemone_tentacles",
             new MarinalOrganBlock(7.0F, 3.0F, AbstractBlock.Settings.copy(Blocks.SPONGE)));
