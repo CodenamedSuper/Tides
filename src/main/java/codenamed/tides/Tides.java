@@ -45,6 +45,9 @@ public class Tides implements ModInitializer {
 
 		BiomePlacement.replaceOverworld(BiomeKeys.BEACH, TidesBiomeKeys.SHORE, 0.1d);
 
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.RIVER),
+				GenerationStep.Feature.TOP_LAYER_MODIFICATION, TidesPlacedFeatures.DISK_PEBBLESTONE);
+
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.LUKEWARM_OCEAN),
 				GenerationStep.Feature.VEGETAL_DECORATION, TidesPlacedFeatures.CLAM);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.WARM_OCEAN),

@@ -15,6 +15,9 @@ public class TidesBlocks {
     public static final Block SHORESTONE = registerBlock("shorestone",
             new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
 
+    public static final Block PEBBLESTONE = registerBlock("pebblestone",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool()));
+
     public static final Block CLAM = registerBlock("clam",
             new ClamBlock(AbstractBlock.Settings.copy(Blocks.STONE).requiresTool().ticksRandomly()));
 

@@ -16,6 +16,7 @@ public class TidesPlacedFeatures {
     public static final RegistryKey<PlacedFeature> CLAM = registerKey("clam");
 
     public static final RegistryKey<PlacedFeature> DISK_LIMESTONE = registerKey("disk_shorestone");
+    public static final RegistryKey<PlacedFeature> DISK_PEBBLESTONE = registerKey("disk_pebblestone");
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(Tides.MOD_ID, name));

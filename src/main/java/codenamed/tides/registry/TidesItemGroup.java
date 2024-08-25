@@ -18,6 +18,7 @@ public class TidesItemGroup {
                     .icon(() -> new ItemStack(TidesBlocks.CLAM)).entries((displayContext, entries) -> {
 
                         entries.add(TidesBlocks.SHORESTONE);
+                        entries.add(TidesBlocks.PEBBLESTONE);
                         entries.add(Blocks.SPONGE);
                         entries.add(TidesBlocks.SPONGE_TUBES);
                         entries.add(TidesBlocks.URCHIN);
