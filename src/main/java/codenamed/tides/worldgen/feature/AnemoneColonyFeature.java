@@ -1,6 +1,6 @@
 package codenamed.tides.worldgen.feature;
 
-import codenamed.tides.block.MarinalOrganBlock;
+import codenamed.tides.block.custom.MarinalOrganBlock;
 import codenamed.tides.registry.TidesBlocks;
 import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;

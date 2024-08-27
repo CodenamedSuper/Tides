@@ -1,4 +1,4 @@
-package codenamed.tides.block;
+package codenamed.tides.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Waterloggable;

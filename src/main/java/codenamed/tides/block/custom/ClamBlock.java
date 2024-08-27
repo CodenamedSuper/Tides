@@ -1,24 +1,23 @@
-package codenamed.tides.block;
+package codenamed.tides.block.custom;
 
+import codenamed.tides.block.entity.ClamBlockEntity;
+import codenamed.tides.registry.TidesItems;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.property.Property;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.util.BlockRotation;
+import net.minecraft.util.*;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -32,7 +31,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import org.jetbrains.annotations.Nullable;
 
-public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
+public class ClamBlock extends BlockWithEntity implements Waterloggable {
 
     public  static  final BooleanProperty OPEN = BooleanProperty.of("open");
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
@@ -44,6 +43,11 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
         this.setDefaultState((this.stateManager.getDefaultState()).with(OPEN, false).with(WATERLOGGED, false));
 
 
+    }
+
+    @Override
+    protected MapCodec<? extends BlockWithEntity> getCodec() {
+        return null;
     }
 
     @Override
@@ -99,11 +103,28 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
         }
     }
 
-
+    @Override
+    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        return super.onUseWithItem(stack, state, world, pos, player, hand, hit);
+    }
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
+
+        if (state.get(OPEN)) {
+            BlockEntity entity = world.getBlockEntity(pos);
+
+            if (entity instanceof ClamBlockEntity clamBlockEntity) {
+
+                if (clamBlockEntity.getPearled()) {
+                    clamBlockEntity.pearled = false;
+                    player.getInventory().insertStack(TidesItems.PEARL.getDefaultStack());
+                    return ActionResult.CONSUME;
+                }
+            }
+        }
+        System.out.println("yeah");
         cycleOpenedState(state, world, pos, player);
         return ActionResult.SUCCESS;
     }
@@ -153,15 +174,19 @@ public class ClamBlock extends HorizontalFacingBlock implements Waterloggable {
         builder.add(new Property[]{OPEN, FACING, WATERLOGGED});
 
     }
-    
-
-    @Override
-    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
-        return null;
-    }
 
     static {
         WATERLOGGED = Properties.WATERLOGGED;
 
+    }
+
+    protected BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new ClamBlockEntity(pos, state);
     }
 }

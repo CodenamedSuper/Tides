@@ -36,6 +36,7 @@ public class Tides implements ModInitializer {
 
 		TidesBlocks.registerModBlocks();
 		TidesItems.registerModItems();
+		TidesBlockEntityType.registerBlockEntities();
 		TidesItemGroup.registerItemGroups();
 		TidesFeature.registerFeatures();
 		TidesPlacedFeatures.registerPlacedFeatures();

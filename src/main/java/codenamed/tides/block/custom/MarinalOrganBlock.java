@@ -1,4 +1,4 @@
-package codenamed.tides.block;
+package codenamed.tides.block.custom;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
