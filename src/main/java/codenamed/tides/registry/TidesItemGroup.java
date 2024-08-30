@@ -19,22 +19,22 @@ public class TidesItemGroup {
 
                         entries.add(TidesBlocks.SHORESTONE);
                         entries.add(TidesBlocks.PEBBLESTONE);
-                        entries.add(TidesBlocks.PLATED_CORAL_BLOCK);
+                        entries.add(TidesBlocks.PLATE_CORAL_BLOCK);
                         entries.add(TidesBlocks.LEAF_CORAL_BLOCK);
                         entries.add(TidesBlocks.GHOST_CORAL_BLOCK);
-                        entries.add(TidesBlocks.DEAD_PLATED_CORAL_BLOCK);
+                        entries.add(TidesBlocks.DEAD_PLATE_CORAL_BLOCK);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL_BLOCK);
                         entries.add(TidesBlocks.DEAD_GHOST_CORAL_BLOCK);
-                        entries.add(TidesBlocks.PLATED_CORAL);
+                        entries.add(TidesBlocks.PLATE_CORAL);
                         entries.add(TidesBlocks.LEAF_CORAL);
                         entries.add(TidesBlocks.GHOST_CORAL);
-                        entries.add(TidesBlocks.DEAD_PLATED_CORAL);
+                        entries.add(TidesBlocks.DEAD_PLATE_CORAL);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL);
                         entries.add(TidesBlocks.DEAD_GHOST_CORAL);
-                        entries.add(TidesBlocks.PLATED_CORAL_FAN);
+                        entries.add(TidesBlocks.PLATE_CORAL_FAN);
                         entries.add(TidesBlocks.LEAF_CORAL_FAN);
                         entries.add(TidesBlocks.GHOST_CORAL_FAN);
-                        entries.add(TidesBlocks.DEAD_PLATED_CORAL_FAN);
+                        entries.add(TidesBlocks.DEAD_PLATE_CORAL_FAN);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL_FAN);
                         entries.add(TidesBlocks.DEAD_GHOST_CORAL_FAN);
                         entries.add(Blocks.SPONGE);

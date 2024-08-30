@@ -8,7 +8,13 @@
     "tides:anemone",
     "tides:anemone_tentacles",
     "tides:sponge_tubes",
-    "tides:clam"
+    "tides:clam",
 
+    "tides:plate_coral_block",
+    "tides:dead_plate_coral_block",
+    "tides:leaf_coral_block",
+    "tides:dead_leaf_coral_block",
+    "tides:ghost_coral_block",
+    "tides:dead_ghost_coral_block"
   ]
 }

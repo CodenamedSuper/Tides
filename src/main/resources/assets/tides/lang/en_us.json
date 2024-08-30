@@ -10,8 +10,26 @@
 
   "item.tides.pearl": "Pearl",
 
-  "item.tides.ocean_stew": "Ocean Stew"
+  "item.tides.ocean_stew": "Ocean Stew",
 
+  "block.tides.ghost_coral": "Ghost Coral",
+  "block.tides.ghost_coral_block": "Ghost Coral Block",
+  "block.tides.ghost_coral_fan": "Ghost Coral Fan",
+  "block.tides.dead_ghost_coral": "Dead Ghost Coral",
+  "block.tides.dead_ghost_coral_block": "Dead Ghost Coral Block",
+  "block.tides.dead_ghost_coral_fan": "Dead Ghost Coral Fan",
 
+  "block.tides.leaf_coral": "Leaf Coral",
+  "block.tides.leaf_coral_block": "Leaf Coral Block",
+  "block.tides.leaf_coral_fan": "Leaf Coral Fan",
+  "block.tides.leaf_ghost_coral": "Leaf Ghost Coral",
+  "block.tides.leaf_ghost_coral_block": "Leaf Ghost Coral Block",
+  "block.tides.leaf_ghost_coral_fan": "Leaf Ghost Coral Fan",
 
+  "block.tides.plate_coral": "Plate Coral",
+  "block.tides.plate_coral_block": "Plate Coral Block",
+  "block.tides.plate_coral_fan": "Plate Coral Fan",
+  "block.tides.plate_ghost_coral": "Plate Ghost Coral",
+  "block.tides.plate_ghost_coral_block": "Plate Ghost Coral Block",
+  "block.tides.plate_ghost_coral_fan": "Plate Ghost Coral Fan"
 }

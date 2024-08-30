@@ -45,7 +45,7 @@ public class TidesBlocks {
     public static final Block DEAD_GHOST_CORAL_BLOCK = registerBlock("dead_ghost_coral_block",
             new Block(AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_BLOCK)));
 
-    public static final Block DEAD_PLATED_CORAL_BLOCK = registerBlock("dead_plated_coral_block",
+    public static final Block DEAD_PLATE_CORAL_BLOCK = registerBlock("dead_plate_coral_block",
             new Block(AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_BLOCK)));
     //Dead
 
@@ -55,8 +55,8 @@ public class TidesBlocks {
     public static final Block GHOST_CORAL_BLOCK = registerBlock("ghost_coral_block",
             new CoralBlockBlock(DEAD_GHOST_CORAL_BLOCK,AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_BLOCK)));
 
-    public static final Block PLATED_CORAL_BLOCK = registerBlock("plated_coral_block",
-            new CoralBlockBlock(DEAD_PLATED_CORAL_BLOCK,AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_BLOCK)));
+    public static final Block PLATE_CORAL_BLOCK = registerBlock("plate_coral_block",
+            new CoralBlockBlock(DEAD_PLATE_CORAL_BLOCK,AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_BLOCK)));
 
     //Corals
 
@@ -67,7 +67,7 @@ public class TidesBlocks {
     public static final Block DEAD_GHOST_CORAL = registerBlock("dead_ghost_coral",
             new DeadCoralBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL)));
 
-    public static final Block DEAD_PLATED_CORAL = registerBlock("dead_plated_coral",
+    public static final Block DEAD_PLATE_CORAL = registerBlock("dead_plate_coral",
             new DeadCoralBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL)));
     //Dead
 
@@ -77,8 +77,8 @@ public class TidesBlocks {
     public static final Block GHOST_CORAL = registerBlock("ghost_coral",
             new CoralBlock(DEAD_GHOST_CORAL,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL)));
 
-    public static final Block PLATED_CORAL = registerBlock("plated_coral",
-            new CoralBlock(DEAD_PLATED_CORAL,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL)));
+    public static final Block PLATE_CORAL = registerBlock("plate_coral",
+            new CoralBlock(DEAD_PLATE_CORAL,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL)));
 
     //Coral Fans
 
@@ -90,7 +90,7 @@ public class TidesBlocks {
     public static final Block DEAD_GHOST_CORAL_FAN = registerBlock("dead_ghost_coral_fan",
             new DeadCoralFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_FAN)));
 
-    public static final Block DEAD_PLATED_CORAL_FAN = registerBlock("dead_plated_coral_fan",
+    public static final Block DEAD_PLATE_CORAL_FAN = registerBlock("dead_plate_coral_fan",
             new DeadCoralFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_FAN)));
 
     //Dead
@@ -101,8 +101,8 @@ public class TidesBlocks {
     public static final Block GHOST_CORAL_FAN = registerBlock("ghost_coral_fan",
             new CoralFanBlock(DEAD_GHOST_CORAL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN)));
 
-    public static final Block PLATED_CORAL_FAN = registerBlock("plated_coral_fan",
-            new CoralFanBlock(DEAD_PLATED_CORAL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN)));
+    public static final Block PLATE_CORAL_FAN = registerBlock("plate_coral_fan",
+            new CoralFanBlock(DEAD_PLATE_CORAL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN)));
 
     //Coral Wall Fans
 
@@ -114,7 +114,7 @@ public class TidesBlocks {
     public static final Block DEAD_GHOST_CORAL_WALL_FAN = registerBlock("dead_ghost_coral_wall_fan",
             new DeadCoralWallFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_WALL_FAN)));
 
-    public static final Block DEAD_PLATED_CORAL_WALL_FAN = registerBlock("dead_plated_coral_wall_fan",
+    public static final Block DEAD_PLATE_CORAL_WALL_FAN = registerBlock("dead_plate_coral_wall_fan",
             new DeadCoralWallFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_WALL_FAN)));
 
     //Dead
@@ -125,8 +125,8 @@ public class TidesBlocks {
     public static final Block GHOST_CORAL_WALL_FAN = registerBlock("ghost_coral_wall_fan",
             new CoralWallFanBlock(DEAD_GHOST_CORAL_WALL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_WALL_FAN)));
 
-    public static final Block PLATED_CORAL_WALL_FAN = registerBlock("plated_coral_wall_fan",
-            new CoralWallFanBlock(DEAD_PLATED_CORAL_WALL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_WALL_FAN)));
+    public static final Block PLATE_CORAL_WALL_FAN = registerBlock("plate_coral_wall_fan",
+            new CoralWallFanBlock(DEAD_PLATE_CORAL_WALL_FAN,AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_WALL_FAN)));
 
 
 

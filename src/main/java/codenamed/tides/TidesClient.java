@@ -15,22 +15,22 @@ public class TidesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.ANEMONE_TENTACLES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.SPONGE_TUBES, RenderLayer.getCutout());
 
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATED_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATED_CORAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATED_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATED_CORAL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATED_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATED_CORAL_WALL_FAN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
 
