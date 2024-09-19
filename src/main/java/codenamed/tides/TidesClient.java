@@ -1,6 +1,5 @@
 package codenamed.tides;
 
-import codenamed.tides.block.entity.renderer.ClamBlockEntityRenderer;
 import codenamed.tides.registry.TidesBlockEntityType;
 import codenamed.tides.registry.TidesBlocks;
 import net.fabricmc.api.ClientModInitializer;
@@ -17,24 +16,17 @@ public class TidesClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.PLATE_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.LEAF_CORAL_WALL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_PLATE_CORAL_WALL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_LEAF_CORAL_WALL_FAN, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(TidesBlocks.DEAD_GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
 
 
-        BlockEntityRendererFactories.register(TidesBlockEntityType.CLAM, ClamBlockEntityRenderer::new);
     }
 }

@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "minecraft:plate_coral_block"
+              "name": "tides:plate_coral_block"
             },
             {
               "type": "minecraft:item",

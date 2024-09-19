@@ -14,7 +14,15 @@
     "tides:dead_plate_coral_block",
     "tides:leaf_coral_block",
     "tides:dead_leaf_coral_block",
-    "tides:ghost_coral_block",
-    "tides:dead_ghost_coral_block"
+
+    "tides:plate_coral_fan",
+    "tides:dead_plate_coral_fan",
+    "tides:leaf_coral_fan",
+    "tides:dead_leaf_coral_fan",
+
+    "tides:plate_coral_wall_fan",
+    "tides:dead_plate_coral_wall_fan",
+    "tides:leaf_coral_wall_fan",
+    "tides:dead_leaf_coral_wall_fan"
   ]
 }

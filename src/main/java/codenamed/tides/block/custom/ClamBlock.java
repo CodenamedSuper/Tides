@@ -112,19 +112,6 @@ public class ClamBlock extends BlockWithEntity implements Waterloggable {
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
 
-        if (state.get(OPEN)) {
-            BlockEntity entity = world.getBlockEntity(pos);
-
-            if (entity instanceof ClamBlockEntity clamBlockEntity) {
-
-                if (clamBlockEntity.getPearled()) {
-                    clamBlockEntity.pearled = false;
-                    player.getInventory().insertStack(TidesItems.PEARL.getDefaultStack());
-                    return ActionResult.CONSUME;
-                }
-            }
-        }
-        System.out.println("yeah");
         cycleOpenedState(state, world, pos, player);
         return ActionResult.SUCCESS;
     }

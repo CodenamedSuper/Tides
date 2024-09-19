@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tides:dead_ghost_coral_block"
+          "name": "tides:pebblestone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tides:blocks/dead_ghost_coral_block"
+  "random_sequence": "tides:blocks/pebblestone"
 }

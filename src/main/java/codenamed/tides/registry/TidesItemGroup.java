@@ -21,22 +21,16 @@ public class TidesItemGroup {
                         entries.add(TidesBlocks.PEBBLESTONE);
                         entries.add(TidesBlocks.PLATE_CORAL_BLOCK);
                         entries.add(TidesBlocks.LEAF_CORAL_BLOCK);
-                        entries.add(TidesBlocks.GHOST_CORAL_BLOCK);
                         entries.add(TidesBlocks.DEAD_PLATE_CORAL_BLOCK);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL_BLOCK);
-                        entries.add(TidesBlocks.DEAD_GHOST_CORAL_BLOCK);
                         entries.add(TidesBlocks.PLATE_CORAL);
                         entries.add(TidesBlocks.LEAF_CORAL);
-                        entries.add(TidesBlocks.GHOST_CORAL);
                         entries.add(TidesBlocks.DEAD_PLATE_CORAL);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL);
-                        entries.add(TidesBlocks.DEAD_GHOST_CORAL);
                         entries.add(TidesBlocks.PLATE_CORAL_FAN);
                         entries.add(TidesBlocks.LEAF_CORAL_FAN);
-                        entries.add(TidesBlocks.GHOST_CORAL_FAN);
                         entries.add(TidesBlocks.DEAD_PLATE_CORAL_FAN);
                         entries.add(TidesBlocks.DEAD_LEAF_CORAL_FAN);
-                        entries.add(TidesBlocks.DEAD_GHOST_CORAL_FAN);
                         entries.add(Blocks.SPONGE);
                         entries.add(TidesBlocks.SPONGE_TUBES);
                         entries.add(TidesBlocks.URCHIN);
@@ -44,7 +38,6 @@ public class TidesItemGroup {
                         entries.add(TidesBlocks.ANEMONE);
                         entries.add(TidesBlocks.ANEMONE_TENTACLES);
                         entries.add(TidesBlocks.CLAM);
-                        entries.add(TidesItems.PEARL);
                         entries.add(TidesItems.OCEAN_STEW);
 
 

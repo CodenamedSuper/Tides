@@ -1,8 +1,7 @@
 {
+  "replace": false,
   "values": [
     "tides:plate_coral_wall_fan",
-    "tides:leaf_coral_wall_fan",
-    "tides:ghost_coral_wall_fan"
-
+    "tides:leaf_coral_wall_fan"
   ]
 }

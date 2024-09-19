@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:dead_plate_coral"
+          "name": "tides:dead_plate_coral"
         }
       ],
       "rolls": 1.0

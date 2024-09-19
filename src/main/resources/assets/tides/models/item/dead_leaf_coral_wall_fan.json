@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "tides:block/dead_ghost_coral_fan"
+    "layer0": "tides:block/dead_leaf_coral"
   }
 }

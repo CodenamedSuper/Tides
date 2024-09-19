@@ -1,6 +1,6 @@
 {
+  "replace": false,
   "values": [
-    "tides:ghost_coral_fan",
     "tides:plate_coral_fan",
     "tides:leaf_coral_fan"
   ]
